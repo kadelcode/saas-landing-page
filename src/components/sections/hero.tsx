@@ -60,7 +60,7 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className='mt-6 flex space-x-4'
             >
-                <Button size="lg" className='px-6 py-3 text-lg bg-[#6c63ff] hover:bg-[#6c63ff]/70'>Get Started</Button>
+                <Button size="lg" className='px-6 py-3 text-lg bg-[#6c63ff] hover:bg-[#6c63ff]/70 dark:text-white'>Get Started</Button>
                 <Button size="lg" variant="outline" className='px-6 py-3 text-lg'>Learn More</Button>
             </motion.div>
 
