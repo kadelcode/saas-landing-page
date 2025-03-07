@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { ThemeProvider } from "next-themes";
 import { Hero } from "@/components/sections/hero";
 
