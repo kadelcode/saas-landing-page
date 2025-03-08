@@ -1,6 +1,8 @@
-import { motion } from 'framer-motion';
-import { Code, ShieldCheck, Zap } from 'lucide-react';
-import { ReactNode } from 'react';
+"use client"
+
+import { motion } from "framer-motion";
+import * as LucideIcons from "lucide-react";
+import { ReactNode } from "react";
 
 interface Feature {
   icon: ReactNode;
@@ -10,20 +12,20 @@ interface Feature {
 
 const features: Feature[] = [
   {
-    icon: <Code className="w-10 h-10 text-primary" />,
+    icon: <LucideIcons.Code className="w-10 h-10 text-[#6c63ff]" />,
     title: "Developer Friendly",
-    description: "Easily integrate with our powerful APIs and SDKs to enhance your workflows."
+    description: "Easily integrate with our powerful APIs and SDKs to enhance your workflows.",
   },
   {
-    icon: <ShieldCheck className="w-10 h-10 text-primary" />,
+    icon: <LucideIcons.ShieldCheck className="w-10 h-10 text-[#6c63ff]" />,
     title: "Secure & Reliable",
-    description: "Our platform ensures top-notch security and uptime for your critical business needs."
+    description: "Our platform ensures top-notch security and uptime for your critical business needs.",
   },
   {
-    icon: <Zap className="w-10 h-10 text-primary" />,
+    icon: <LucideIcons.Zap className="w-10 h-10 text-[#6c63ff]" />,
     title: "AI-Powered Automation",
-    description: "Leverage artificial intelligence to automate repetitive tasks and boost efficiency."
-  }
+    description: "Leverage artificial intelligence to automate repetitive tasks and boost efficiency.",
+  },
 ];
 
 export function Features() {
@@ -38,7 +40,7 @@ export function Features() {
         >
           Why Choose Our Platform?
         </motion.h2>
-        
+
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -47,7 +49,7 @@ export function Features() {
         >
           Our platform is designed to offer the best experience with cutting-edge technology.
         </motion.p>
-        
+
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, index) => (
             <motion.div
@@ -57,9 +59,7 @@ export function Features() {
               transition={{ duration: 0.6, delay: index * 0.2 }}
               className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md"
             >
-              <div className="flex justify-center mb-4">
-                {feature.icon}
-              </div>
+              <div className="flex justify-center mb-4">{feature.icon}</div>
               <h3 className="text-xl font-semibold">{feature.title}</h3>
               <p className="mt-2 text-gray-600 dark:text-gray-300">{feature.description}</p>
             </motion.div>
