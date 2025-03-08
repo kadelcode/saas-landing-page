@@ -30,7 +30,7 @@ const features: Feature[] = [
 
 export function Features() {
   return (
-    <section className="py-20 bg-gray-100 dark:bg-gray-900 text-center">
+    <section className="transition-colors py-20 bg-gray-100 dark:bg-gray-900 text-center">
       <div className="container mx-auto px-6">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
