@@ -20,10 +20,10 @@ export function Hero() {
         <section className='relative flex flex-col items-center justify-center text-center py-20 px-6'>
             {/* Dark Mode Toggle */}
             {mounted && (
-                <div className='absolute top-6 right-6'>
+                <div className='fixed top-6 right-6'>
                     <button
                       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                      className='p-2 rounded-full bg-gray-200 dark:bg-gray-800'
+                      className='p-2 rounded-full bg-gray-200 dark:bg-gray-800 hover:cursor-pointer'
                     >
                         {theme === 'dark' ?
                         <Sun className='w-6 h-6' /> :
