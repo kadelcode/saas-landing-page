@@ -4,12 +4,14 @@ import { motion } from "framer-motion";
 import * as LucideIcons from "lucide-react";
 import { ReactNode } from "react";
 
+// A `Feature` interface with 3 properties
 interface Feature {
   icon: ReactNode;
   title: string;
   description: string;
 }
 
+// An array of `Feature` objects
 const features: Feature[] = [
   {
     icon: <LucideIcons.Code className="w-10 h-10 text-[#6c63ff]" />,
@@ -28,10 +30,17 @@ const features: Feature[] = [
   },
 ];
 
+/* Features component */
 export function Features() {
   return (
     <section className="transition-colors py-20 bg-gray-100 dark:bg-gray-900 text-center">
       <div className="container mx-auto px-6">
+
+        {/* An animated heading h2 
+            Starts with zero opacity and a slight upward offset, the animates to full
+            opacity and its original position over 0.6 seconds
+        */}
+        
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -41,6 +50,9 @@ export function Features() {
           Why Choose Our Platform?
         </motion.h2>
 
+        {/* An animated paragraph (p) that fades in and moves up slightly,
+            with a delay of 0.2 seconds after the heading animation.
+        */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -51,6 +63,11 @@ export function Features() {
         </motion.p>
 
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {/**
+           * Maps over the `features` array to create a grid of feature cards.
+           * Each card is animated to fade in and move up, with a staggered
+           * delay based on its index.
+           */}
           {features.map((feature, index) => (
             <motion.div
               key={index}
