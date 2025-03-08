@@ -40,7 +40,7 @@ export function Hero() {
               transition={{ duration: 0.6 }}
               className='text-4xl font-bold sm:text-5xl'
             >
-                Supercharge Your Business with Our <span className='text-[#6c63ff] dark:text-[#9892fc]'>AI-Powered</span> SaaS
+                Supercharge Your Business with Our <span className='text-[#6c63ff]'>AI-Powered</span> SaaS
             </motion.h1>
 
             <motion.p

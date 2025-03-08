@@ -73,7 +73,7 @@ export function Pricing() {
                                 ))}
                             </ul>
 
-                            <button className="mt-6 w-full px-4 py-2 text-white bg-[#6c63ff] hover:bg-[#4a41f8] dark:bg-[#9892fc] dark:hover:bg-[#817afa] cursor-pointer rounded-lg transition-colors duration-300">
+                            <button className="mt-6 w-full px-4 py-2 text-white bg-[#6c63ff] hover:bg-[#4a41f8] cursor-pointer rounded-lg transition-colors duration-300">
                                 Choose Plan
                             </button>
                         </motion.div>
