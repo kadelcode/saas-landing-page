@@ -129,12 +129,12 @@
 /*html {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }*/
-html, body {
+/*html, body {
   @apply bg-white text-black dark:bg-black dark:text-white transition-colors;
-}
+}*/
 
 @supports (-webkit-touch-callout: none) {
-  html {
+  html body {
     background-color: transparent !important;
   }
 }
