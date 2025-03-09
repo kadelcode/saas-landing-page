@@ -77,7 +77,7 @@ export function Features() {
               className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md"
             >
               <div className="flex justify-center mb-4">{feature.icon}</div>
-              <h3 className="text-xl font-semibold">{feature.title}</h3>
+              <h3 className="text-xl font-semibold dark:text-pink-400">{feature.title}</h3>
               <p className="mt-2 text-gray-600 dark:text-gray-300">{feature.description}</p>
             </motion.div>
           ))}
