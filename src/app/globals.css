@@ -133,6 +133,12 @@ html, body {
   @apply bg-white text-black dark:bg-black dark:text-white transition-colors;
 }
 
+@supports (-webkit-touch-callout: none) {
+  html {
+    background-color: transparent !important;
+  }
+}
+
 /* Custom Swiper Pagination */
 .swiper-pagination-bullet {
   background-color: gray !important; /* Default bullet color */
