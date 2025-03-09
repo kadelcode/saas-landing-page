@@ -66,7 +66,7 @@ export function Pricing() {
 
                             <ul className="mt-4 space-y-2 text-gray-600 dark:text-gray-300">
                                 {plan.features.map((feature, i) => (
-                                    <li key={i} className="flex items-center gap-2">
+                                    <li key={i} className="flex text-sm md:text-[16px] items-center gap-2">
                                         <CheckCircle className="w-5 h-5 text-green-500" />
                                         {feature}
                                     </li>
