@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/providers";
+import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
 const geistSans = Geist({
@@ -30,6 +31,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased transition-colors 0.3`}
       >
         <ThemeProvider>
+          <Header />
           {children}
           <Footer />
         </ThemeProvider>
