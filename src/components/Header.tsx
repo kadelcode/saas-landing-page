@@ -38,7 +38,12 @@ export function Header() {
             <div className="container mx-auto flex justify-between items-center py-4 px-6">
                 {/* Logo */}
                 <Link href="/" className="text-xl font-bold text-gray-900 dark:text-white">
-                    <Image alt="logo" width={50} height={50} src="/LitAI-logo.png" />
+                    <div className="flex items-center">
+                        <Image alt="logo" width={35} height={35} src="/logo-transparent.png"
+                        className="bg-[#6c63ff] rounded-md"
+                        />
+                        <span className="text-lg">Lit AI</span>
+                    </div>
                 </Link>
 
                 {/* Navigation Links */}
