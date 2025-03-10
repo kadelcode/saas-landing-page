@@ -2,15 +2,12 @@
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
-import ThemeToggle from '@/components/ThemeToggle';
-
 
 export function Hero() {
 
 
     return (
-        <section className='relative flex flex-col items-center justify-center text-center py-20 px-6'>
-            <ThemeToggle />
+        <section className='relative mt-14 flex flex-col items-center justify-center text-center py-20 px-6'>
             {/* Hero Content */}
             <motion.h1
               initial={{ opacity: 0, y: -20 }}
