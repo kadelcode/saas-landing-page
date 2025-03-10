@@ -39,7 +39,7 @@ export function Header() {
                 {/* Logo */}
                 <Link href="/" className="text-xl font-bold text-gray-900 dark:text-white">
                     <div className="flex items-center">
-                        <Image alt="logo" width={35} height={35} src="/logo-transparent.png"
+                        <Image alt="logo" width={33} height={33} src="/logo-transparent.png"
                         className="bg-[#6c63ff] rounded-md"
                         />
                         <span className="text-lg">Lit AI</span>

@@ -18,6 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Lit AI",
   description: "SaaS Landing Page",
+  icons: "images/favicon.ico",
 };
 
 export default function RootLayout({
